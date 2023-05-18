@@ -19,6 +19,10 @@ if (pulo) {
 
 y += velocidade_vertical;
 
+if (pulo) {
+	velocidade_vertical = -forca_do_pulo;
+}
+
 direcao = -esquerda + direita;
 velocidade_horizontal = velocidade * direcao;
 
