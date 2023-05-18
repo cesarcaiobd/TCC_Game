@@ -26,6 +26,10 @@ if (pulo) {
 direcao = -esquerda + direita;
 velocidade_horizontal = velocidade * direcao;
 
+if (direcao != 0 && direcao != image_xscale) {
+	image_xscale = -image_xscale;
+}
+
 if (place_meeting(x + velocidade_horizontal, y - 1, obj_bloco)) {
 	while (!place_meeting(x + sign(velocidade_horizontal), y - 1, obj_bloco)) {
 		x += sign(velocidade_horizontal);
@@ -35,3 +39,45 @@ if (place_meeting(x + velocidade_horizontal, y - 1, obj_bloco)) {
 }
 
 x += velocidade_horizontal;
+
+switch (estado) {
+	
+	case "parado": {
+		sprite_index = spr_skeleton_idle;
+	
+		if (velocidade_horizontal != 0) {
+			estado = "movendo";
+		}
+		
+		if (ataque) {
+			estado = "atacando";
+		}
+		
+		break;
+	}
+	
+	case "movendo": {
+		sprite_index = spr_skeleton_run;
+		
+		if (velocidade_horizontal == 0) {
+			estado = "parado";
+		}
+		
+		if (ataque) {
+			estado = "atacando";
+		}
+		
+		break;
+	}
+	
+	/*case "atacando": {
+		velocidade_horizontal = 0;
+		sprite_index = spr_skeleton_attack_0;
+		
+		if (image_index == image_number - 2) {
+			estado = "parado";
+		}
+		
+		break;
+	}*/
+}
