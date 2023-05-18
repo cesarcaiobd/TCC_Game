@@ -1,14 +1,3 @@
-esquerda = obj_player.x < x;
-direita = obj_player.x > x;
-
-direcao = -esquerda + direita;
-
-if (obj_player.y > y) {
-	
-}
-
-velocidade_horizontal = velocidade * direcao;
-
 if (place_meeting(x + velocidade_horizontal, y - 1, obj_bloco)) {
 	while (!place_meeting(x + sign(velocidade_horizontal), y - 1, obj_bloco)) {
 		x += sign(velocidade_horizontal);
