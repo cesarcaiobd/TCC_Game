@@ -1,0 +1,13 @@
+pulo = keyboard_check_pressed(ord("K"));
+esquerda = keyboard_check(ord("A"));
+direita = keyboard_check(ord("D"));
+
+if (pulo) {
+	velocidade_vertical = -forca_do_pulo;
+}
+
+direcao = -esquerda + direita;
+velocidade_horizontal = velocidade * direcao;
+
+y += velocidade_vertical;
+x += velocidade_horizontal;
