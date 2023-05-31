@@ -1,14 +1,14 @@
 {
   "resourceType": "GMRoom",
   "resourceVersion": "1.0",
-  "name": "Room3",
+  "name": "Fase1",
   "creationCodeFile": "",
   "inheritCode": false,
   "inheritCreationOrder": false,
   "inheritLayers": false,
   "instanceCreationOrder": [
-    {"name":"inst_16BB01B3","path":"rooms/Room3/Room3.yy",},
-    {"name":"inst_49E53E59","path":"rooms/Room3/Room3.yy",},
+    {"name":"inst_16BB01B3","path":"rooms/Fase1/Fase1.yy",},
+    {"name":"inst_49E53E59","path":"rooms/Fase1/Fase1.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -23,9 +23,11 @@
 409,410,411,412,408,409,410,411,412,408,409,410,411,412,436,437,438,439,440,436,437,438,439,440,436,437,438,439,440,436,437,438,439,440,436,437,438,439,440,436,437,438,439,440,436,437,438,439,440,436,437,438,439,440,436,437,438,439,440,436,436,437,438,439,440,436,437,438,439,440,436,437,438,439,440,436,437,438,439,440,436,437,438,439,440,436,
 437,438,439,440,436,437,438,439,440,436,437,438,439,440,451,452,453,454,450,451,452,453,454,450,451,452,453,454,450,451,452,453,454,450,451,452,453,454,450,451,452,453,454,450,451,452,453,454,451,452,453,454,450,451,452,453,454,450,451,452,453,454,450,451,452,453,454,450,451,452,453,454,452,453,454,450,451,452,453,454,450,451,452,453,454,452,
 453,454,450,451,452,453,454,450,451,464,465,466,467,468,],"TileDataFormat":1,},"tilesetId":{"name":"TileSet2","path":"tilesets/TileSet2/TileSet2.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
-    {"resourceType":"GMREffectLayer","resourceVersion":"1.0","name":"Effect_1","depth":300,"effectEnabled":true,"effectType":"_filter_contrast","gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[
-        {"name":"g_ContrastIntensity","type":0,"value":"1.45",},
-        {"name":"g_ContrastBrightness","type":0,"value":"1",},
+    {"resourceType":"GMREffectLayer","resourceVersion":"1.0","name":"Effect_1","depth":300,"effectEnabled":true,"effectType":"_filter_vignette","gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[
+        {"name":"g_VignetteEdges","type":0,"value":"0.5",},
+        {"name":"g_VignetteEdges","type":0,"value":"1.2",},
+        {"name":"g_VignetteSharpness","type":0,"value":"2",},
+        {"name":"g_VignetteTexture","type":2,"value":"_filter_vignette_texture",},
       ],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRAssetLayer","resourceVersion":"1.0","name":"Assets_1","assets":[
         {"resourceType":"GMRSpriteGraphic","resourceVersion":"1.0","name":"graphic_3DE7DD7C","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"rotation":0.0,"scaleX":1.4719826,"scaleY":1.0,"spriteId":{"name":"Sprite22","path":"sprites/Sprite22/Sprite22.yy",},"x":0.0,"y":1.0,},
@@ -55,7 +57,7 @@
   },
   "sequenceId": null,
   "views": [
-    {"hborder":32,"hport":768,"hspeed":-1,"hview":768,"inherit":false,"objectId":null,"vborder":32,"visible":false,"vspeed":-1,"wport":1366,"wview":1366,"xport":0,"xview":0,"yport":0,"yview":0,},
+    {"hborder":683,"hport":768,"hspeed":-1,"hview":384,"inherit":false,"objectId":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"vborder":384,"visible":true,"vspeed":-1,"wport":1366,"wview":683,"xport":0,"xview":0,"yport":0,"yview":0,},
     {"hborder":32,"hport":768,"hspeed":-1,"hview":768,"inherit":false,"objectId":null,"vborder":32,"visible":false,"vspeed":-1,"wport":1366,"wview":1366,"xport":0,"xview":0,"yport":0,"yview":0,},
     {"hborder":32,"hport":768,"hspeed":-1,"hview":768,"inherit":false,"objectId":null,"vborder":32,"visible":false,"vspeed":-1,"wport":1366,"wview":1366,"xport":0,"xview":0,"yport":0,"yview":0,},
     {"hborder":32,"hport":768,"hspeed":-1,"hview":768,"inherit":false,"objectId":null,"vborder":32,"visible":false,"vspeed":-1,"wport":1366,"wview":1366,"xport":0,"xview":0,"yport":0,"yview":0,},
@@ -67,7 +69,7 @@
   "viewSettings": {
     "clearDisplayBuffer": true,
     "clearViewBackground": false,
-    "enableViews": false,
+    "enableViews": true,
     "inheritViewSettings": false,
   },
   "volume": 1.0,

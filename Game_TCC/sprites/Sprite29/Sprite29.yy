@@ -1,8 +1,8 @@
 {
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
-  "name": "Sprite21",
-  "bbox_bottom": 239,
+  "name": "Sprite29",
+  "bbox_bottom": 179,
   "bbox_left": 0,
   "bbox_right": 319,
   "bbox_top": 0,
@@ -13,26 +13,26 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"cadf94b8-45d1-426f-b503-e35d9eb6ab6f",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"09a0dd50-53ee-4806-9bb1-263f97173056",},
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 240,
+  "height": 180,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"8b51e22c-ea86-4f5e-9a2c-58c6c44955bd","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"369ff7b2-e867-4f67-9a7a-041fc0fb72ab","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "Fase2",
-    "path": "folders/Sprites/Tiles/Fase2.yy",
+    "name": "Fase3",
+    "path": "folders/Sprites/Tiles/Fase3.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
     "resourceType": "GMSequence",
     "resourceVersion": "1.4",
-    "name": "Sprite21",
+    "name": "Sprite29",
     "autoRecord": true,
     "backdropHeight": 768,
     "backdropImageOpacity": 0.5,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"cadf94b8-45d1-426f-b503-e35d9eb6ab6f","path":"sprites/Sprite21/Sprite21.yy",},},},"Disabled":false,"id":"eb99c369-ff2a-4918-a406-f16f4fd61351","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"09a0dd50-53ee-4806-9bb1-263f97173056","path":"sprites/Sprite29/Sprite29.yy",},},},"Disabled":false,"id":"15fe74f8-0fe6-452c-a181-2b623aa7ac97","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -70,5 +70,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 336,
+  "width": 320,
 }

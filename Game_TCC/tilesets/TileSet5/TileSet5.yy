@@ -12,8 +12,8 @@
   "out_tilehborder": 2,
   "out_tilevborder": 2,
   "parent": {
-    "name": "Tiles",
-    "path": "folders/Sprites/Tiles.yy",
+    "name": "Fase2",
+    "path": "folders/Sprites/Tiles/Fase2.yy",
   },
   "spriteId": {
     "name": "Sprite24",
