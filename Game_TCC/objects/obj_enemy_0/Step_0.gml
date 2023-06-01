@@ -1,6 +1,6 @@
-esquerda = /*1*/obj_player.x < x;
-direita = /*1*/obj_player.x > x;
-alcance_player = collision_line(x, y - sprite_height / 2, x + alcance * sign(velocidade_horizontal), y - sprite_height / 2, obj_player, 0, 1);
+esquerda = obj_player.x < x;
+direita = obj_player.x > x;
+alcance_player = collision_line(x, y - sprite_height / 3, x + alcance * sign(velocidade_horizontal), y - sprite_height / 3, obj_player, 0, 1);
 
 direcao = -esquerda + direita;
 
@@ -10,10 +10,6 @@ if (place_meeting(x + velocidade_horizontal, y - 1, obj_bloco)) {
 	while (!place_meeting(x + sign(velocidade_horizontal), y - 1, obj_bloco)) {
 		x += sign(velocidade_horizontal);
 	}
-	
-	/*if (place_meeting(x + sign(velocidade_horizontal), y - 1, obj_bloco) && place_meeting(x, y + 1, obj_bloco)) {
-		velocidade_vertical = -forca_do_pulo;
-	}*/
 	
 	velocidade_horizontal = 0;
 }
@@ -41,24 +37,6 @@ switch (estado) {
 			estado = "movendo";
 		}
 		
-		if (foi_acertado) {
-			if (vida > 0) {
-				estado = "dano";
-				image_index = 0;
-				//foi_acertado = 0;
-			}
-			else {			
-				estado = "morte";
-				image_index = 0;
-				//foi_acertado = 0;
-			}
-		}
-		
-		/*if (alcance_player) {
-			estado = "atacando";
-			image_index = 0;
-		}*/
-		
 		break;
 	}
 	
@@ -67,19 +45,6 @@ switch (estado) {
 		
 		if (velocidade_horizontal == 0) {
 			estado = "parado";
-		}
-		
-		if (foi_acertado) {
-			if (vida > 0) {
-				estado = "dano";
-				image_index = 0;
-				//foi_acertado = 0;
-			}
-			else {			
-				estado = "morte";
-				image_index = 0;
-				//foi_acertado = 0;
-			}
 		}
 		
 		if (alcance_player) {
@@ -98,8 +63,6 @@ switch (estado) {
 			estado = "parado";
 		}
 		
-		foi_acertado = 0;
-		
 		break;
 	}
 	
@@ -108,8 +71,6 @@ switch (estado) {
 		sprite_index = spr_esqueleto_2_dead;
 		
 		if (image_index == image_number - 1) {
-			//vida = 5;
-			//estado = "parado";
 			instance_destroy();
 		}
 		
@@ -124,11 +85,11 @@ switch (estado) {
 			estado = "parado";
 		}
 		
-		/*if (image_index == 7 && dano == noone) {
-			dano = instance_create_layer(x + sprite_width / 2, y - sprite_height / 2, layer, obj_dano);
+		if (image_index == 7 && dano == noone) {
+			dano = instance_create_layer(x + sprite_width / 2, y - sprite_height / 3, layer, obj_dano);
 			dano.dano = forca_do_ataque;
 			dano.pai = id;
-		}*/
+		}
 		
 		break;
 	}

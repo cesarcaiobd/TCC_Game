@@ -37,7 +37,7 @@
   "isEcma": false,
   "LibraryEmitters": [],
   "MetaData": {
-    "IDEVersion": "2023.2.1.75",
+    "IDEVersion": "2023.4.0.84",
   },
   "resources": [
     {"id":{"name":"Fase3","path":"rooms/Fase3/Fase3.yy",},},
@@ -82,9 +82,9 @@
     {"id":{"name":"Ambiente1","path":"rooms/Ambiente1/Ambiente1.yy",},},
   ],
   "RoomOrderNodes": [
-    {"roomId":{"name":"Fase2","path":"rooms/Fase2/Fase2.yy",},},
-    {"roomId":{"name":"Fase1","path":"rooms/Fase1/Fase1.yy",},},
     {"roomId":{"name":"Ambiente1","path":"rooms/Ambiente1/Ambiente1.yy",},},
+    {"roomId":{"name":"Fase1","path":"rooms/Fase1/Fase1.yy",},},
+    {"roomId":{"name":"Fase2","path":"rooms/Fase2/Fase2.yy",},},
     {"roomId":{"name":"Fase3","path":"rooms/Fase3/Fase3.yy",},},
   ],
   "TextureGroups": [

@@ -5,6 +5,10 @@ ataque = keyboard_check_pressed(ord("J"));
 image_yscale = tamanho;
 image_xscale = tamanho * sign(image_xscale);
 
+if (mouse_check_button_pressed(mb_left)) {
+	estado = "dano";
+}
+
 if (place_meeting(x, y + velocidade_vertical, obj_bloco)) {
 	while (!place_meeting(x, y + sign(velocidade_vertical), obj_bloco)) {
 		y += sign(velocidade_vertical);
@@ -49,17 +53,6 @@ switch (estado) {
 			estado = "atacando";
 		}
 		
-		/*if (foi_acertado) {
-			if (vida > 1) {
-				estado = "dano";
-				image_index = 0;
-			}
-			else {
-				estado = "morte";
-				image_index = 0;
-			}
-		}*/
-		
 		break;
 	}
 	
@@ -74,17 +67,6 @@ switch (estado) {
 			image_index = 0;
 			estado = "atacando";
 		}
-		
-		/*if (foi_acertado) {
-			if (vida > 1) {
-				estado = "dano";
-				image_index = 0;
-			}
-			else {
-				estado = "morte";
-				image_index = 0;
-			}
-		}*/
 		
 		break;
 	}
@@ -103,17 +85,6 @@ switch (estado) {
 			dano.pai = id;
 		}
 		
-		/*if (foi_acertado) {
-			if (vida > 1) {
-				estado = "dano";
-				image_index = 0;
-			}
-			else {
-				estado = "morte";
-				image_index = 0;
-			}
-		}*/
-		
 		break;
 	}
 	
@@ -125,8 +96,6 @@ switch (estado) {
 			estado = "parado";
 		}
 		
-		foi_acertado = 0;
-		
 		break;
 	}
 	
@@ -136,6 +105,7 @@ switch (estado) {
 		
 		if (image_index == image_number - 1) {
 			instance_destroy();
+			room_restart();
 		}
 		
 		break;

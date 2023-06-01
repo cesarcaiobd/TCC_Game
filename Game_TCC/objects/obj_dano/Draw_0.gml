@@ -1,3 +1,3 @@
 draw_self();
 
-//draw_text(x, y - 50, pai);
+draw_text(x, y - 100, dano);

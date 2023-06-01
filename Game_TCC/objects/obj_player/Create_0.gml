@@ -9,4 +9,4 @@ tamanho = .75;
 dano = noone;
 forca_do_ataque = 1;
 vida = 3;
-foi_acertado = 0;
+nome = "player";
