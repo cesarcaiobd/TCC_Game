@@ -14,7 +14,6 @@
     {"name":"inst_25EC86F9","path":"rooms/Fase1/Fase1.yy",},
     {"name":"inst_64A13B90","path":"rooms/Fase1/Fase1.yy",},
     {"name":"inst_16E90C1B","path":"rooms/Fase1/Fase1.yy",},
-    {"name":"inst_5ADC6405","path":"rooms/Fase1/Fase1.yy",},
     {"name":"inst_75B8628B","path":"rooms/Fase1/Fase1.yy",},
   ],
   "isDnd": false,
@@ -24,7 +23,6 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_79AD3D87","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_enemy_0","path":"objects/obj_enemy_0/obj_enemy_0.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1106.0,"y":708.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_64A13B90","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_npc1","path":"objects/obj_npc1/obj_npc1.yy",},"properties":[],"rotation":0.0,"scaleX":1.557377,"scaleY":1.5,"x":1248.0,"y":352.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_16E90C1B","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_chave0","path":"objects/obj_chave0/obj_chave0.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":416.0,"y":640.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_5ADC6405","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_transicao","path":"objects/obj_transicao/obj_transicao.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":96.0,"y":224.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_75B8628B","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_porta_invisivel","path":"objects/obj_porta_invisivel/obj_porta_invisivel.yy",},"properties":[],"rotation":0.0,"scaleX":2.0,"scaleY":2.3333333,"x":1312.0,"y":608.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Instances","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
