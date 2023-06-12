@@ -87,6 +87,7 @@ switch (estado) {
 		
 		if (image_index == 7 && dano == noone) {
 			dano = instance_create_layer(x + sprite_width / 2, y - sprite_height / 3, layer, obj_dano);
+			dano.nome = nome;
 			dano.dano = forca_do_ataque;
 			dano.pai = id;
 		}

@@ -1,13 +1,9 @@
-/*if (outro.nome == "inimigo") {
+if (nome == "player") {
 	outro = instance_place(x, y, obj_enemy_0);
 }
 else {
 	outro = instance_place(x, y, obj_player);
-}*/
-
-//outro = instance_place(x, y, obj_enemy_0);
-
-outro = instance_place(x, y, obj_player);
+}
 
 if (outro) {
 	if (outro.id != pai) {
