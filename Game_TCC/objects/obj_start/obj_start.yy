@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_bloco",
+  "name": "obj_start",
   "eventList": [],
   "managed": true,
   "overriddenProperties": [],
@@ -24,10 +24,10 @@
   "physicsShapePoints": [],
   "physicsStartAwake": true,
   "properties": [],
-  "solid": true,
+  "solid": false,
   "spriteId": {
-    "name": "spr_bloco",
-    "path": "sprites/spr_bloco/spr_bloco.yy",
+    "name": "spr_start",
+    "path": "sprites/spr_start/spr_start.yy",
   },
   "spriteMaskId": null,
   "visible": true,

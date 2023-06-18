@@ -8,15 +8,20 @@ else {
 if (outro) {
 	if (outro.id != pai) {
 		if (outro.vida - dano > 0) {
+			if (outro.estado != "dano") {
+				outro.image_index = 0;
+				outro.vida -= dano;
+			}
+			
 			outro.estado = "dano";
-
 		}
 		else {
-			outro.estado = "morte";
+			if (outro.estado != "dano" && outro.estado != "morte") {
+				outro.image_index = 0;
+				outro.vida -= dano;
+				outro.estado = "morte";
+			}
 		}
-		
-		outro.image_index = 0;
-		outro.vida -= dano;
 	}
 }
 

@@ -1,6 +1,7 @@
 esquerda = obj_player.x < x;
 direita = obj_player.x > x;
 alcance_player = collision_line(x, y - sprite_height / 3, x + alcance * sign(velocidade_horizontal), y - sprite_height / 3, obj_player, 0, 1);
+campo_de_visao = collision_line(x, y - sprite_height / 3, x + visao * sign(velocidade_horizontal), y - sprite_height / 3, obj_player, 0, 1);
 
 direcao = -esquerda + direita;
 
@@ -33,7 +34,7 @@ switch (estado) {
 	case "parado": {
 		sprite_index = spr_esqueleto_2_idle;
 		
-		if (velocidade_horizontal != 0) {
+		if (campo_de_visao) {
 			estado = "movendo";
 		}
 		
@@ -42,10 +43,12 @@ switch (estado) {
 	
 	case "movendo": {
 		sprite_index = spr_esqueleto_2_walk;
+		x += velocidade_horizontal;
 		
-		if (velocidade_horizontal == 0) {
+		/*if (!campo_de_visao) {
+			visao /= 2;
 			estado = "parado";
-		}
+		}*/
 		
 		if (alcance_player) {
 			estado = "atacando";
@@ -60,7 +63,7 @@ switch (estado) {
 		sprite_index = spr_esqueleto_2_hit;
 		
 		if (image_index == image_number - 1) {
-			estado = "parado";
+			estado = "movendo";
 		}
 		
 		break;
@@ -82,7 +85,7 @@ switch (estado) {
 		sprite_index = spr_esqueleto_2_attack;
 		
 		if (image_index == image_number - 1) {
-			estado = "parado";
+			estado = "movendo";
 		}
 		
 		if (image_index == 7 && dano == noone) {
@@ -96,5 +99,4 @@ switch (estado) {
 	}
 }
 
-x += velocidade_horizontal;
 y += velocidade_vertical;

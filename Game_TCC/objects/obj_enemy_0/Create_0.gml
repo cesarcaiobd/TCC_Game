@@ -11,3 +11,4 @@ alcance = 80;
 dano = noone;
 forca_do_ataque = 2;
 nome = "inimigo";
+visao = 200;

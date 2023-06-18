@@ -1,8 +1,8 @@
 draw_self();
 
-//draw_text(x, y - sprite_height * 2, vida);
+draw_text(x, y - sprite_height * 2, estado);
 
-//draw_line(x, y - sprite_height / 2, x + alcance * sign(velocidade_horizontal), y - sprite_height / 2);
+//draw_line(x, y - sprite_height / 3, x + visao * sign(velocidade_horizontal), y - sprite_height / 3);
 
 hp = vida / vida_maxima * 100;
 tamanho_da_barra = vida_maxima * 10;
