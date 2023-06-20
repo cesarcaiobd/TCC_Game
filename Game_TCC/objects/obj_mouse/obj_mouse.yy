@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_start",
+  "name": "obj_mouse",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
   ],
@@ -28,8 +28,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_start",
-    "path": "sprites/spr_start/spr_start.yy",
+    "name": "spr_mouse",
+    "path": "sprites/spr_mouse/spr_mouse.yy",
   },
   "spriteMaskId": null,
   "visible": true,

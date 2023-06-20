@@ -9,6 +9,25 @@ image_xscale = tamanho * sign(image_xscale);
 	
 }*/
 
+/*if (place_meeting(x, y + velocidade_vertical, obj_bloco)) {
+	while (!place_meeting(x, y + sign(velocidade_vertical), obj_bloco)) {
+		y += sign(velocidade_vertical);
+	}
+	
+	velocidade_vertical = 0;
+	pulos = limite_de_pulo;
+}
+else {
+	velocidade_vertical += gravidade * massa;
+}*/
+
+if (pulo && pulos > 0) {
+	if (place_meeting(x, y + 1, obj_bloco) && pulos == limite_de_pulo || !place_meeting(x, y + 1, obj_bloco) && pulos <= limite_de_pulo) {
+		velocidade_vertical = -forca_do_pulo;
+		pulos--;
+	}
+}
+
 if (place_meeting(x, y + velocidade_vertical, obj_bloco)) {
 	while (!place_meeting(x, y + sign(velocidade_vertical), obj_bloco)) {
 		y += sign(velocidade_vertical);
@@ -19,13 +38,6 @@ if (place_meeting(x, y + velocidade_vertical, obj_bloco)) {
 }
 else {
 	velocidade_vertical += gravidade * massa;
-}
-
-if (pulo && pulos > 0) {
-	if (place_meeting(x, y + 1, obj_bloco) && pulos == limite_de_pulo || !place_meeting(x, y + 1, obj_bloco) && pulos <= limite_de_pulo) {
-		velocidade_vertical = -forca_do_pulo;
-		pulos--;
-	}
 }
 
 direcao = -esquerda + direita;
@@ -76,7 +88,10 @@ switch (estado) {
 	}
 	
 	case "atacando": {
-		velocidade_horizontal = 0;
+		if (place_meeting(x, y + 1, obj_bloco)) {
+			velocidade_horizontal = 0;
+		}
+		
 		sprite_index = spr_skeleton_attack_0;
 		
 		if (image_index == image_number - 1) {
