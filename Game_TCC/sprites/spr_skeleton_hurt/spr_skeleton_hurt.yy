@@ -28,8 +28,8 @@
   "nineSlice": null,
   "origin": 9,
   "parent": {
-    "name": "spr_esqueleto",
-    "path": "folders/Sprites/spr_esqueleto.yy",
+    "name": "spr_skeleton_sword_player",
+    "path": "folders/Sprites/spr_skeleton_sword_player.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

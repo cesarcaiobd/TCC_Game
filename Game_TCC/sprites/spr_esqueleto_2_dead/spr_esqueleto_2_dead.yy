@@ -39,8 +39,8 @@
   "nineSlice": null,
   "origin": 9,
   "parent": {
-    "name": "spr_esqueleto_2",
-    "path": "folders/Sprites/spr_esqueleto_2.yy",
+    "name": "spr_esqueleto",
+    "path": "folders/Sprites/spr_esqueleto.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

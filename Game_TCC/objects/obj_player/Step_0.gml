@@ -43,7 +43,7 @@ else {
 direcao = -esquerda + direita;
 velocidade_horizontal = velocidade * direcao;
 
-if (direcao != 0 && direcao != sign(image_xscale) && sprite_index != spr_skeleton_attack_0) {
+if (direcao != 0 && direcao != sign(image_xscale) && sprite_index != spr_skeleton_attack) {
 	image_xscale = -image_xscale;
 }
 
@@ -92,7 +92,7 @@ switch (estado) {
 			velocidade_horizontal = 0;
 		}
 		
-		sprite_index = spr_skeleton_attack_0;
+		sprite_index = spr_skeleton_attack;
 		
 		if (image_index == image_number - 1) {
 			estado = "parado";

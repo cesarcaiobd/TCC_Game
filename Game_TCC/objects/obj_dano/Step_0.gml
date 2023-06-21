@@ -1,8 +1,21 @@
-if (nome == "player") {
-	outro = instance_place(x, y, obj_enemy_0);
+if (nome != "player") {
+	outro_player = instance_place(x, y, obj_player);
+	
+	if (outro_player) {
+		outro = outro_player;
+	}
 }
 else {
-	outro = instance_place(x, y, obj_player);
+	outro_esqueleto = instance_place(x, y, obj_esqueleto);
+	outro_esqueleto_vermelho = instance_place(x, y, obj_esqueleto_vermelho);
+	
+	if (outro_esqueleto) {
+		outro = outro_esqueleto;
+	}
+	
+	if (outro_esqueleto_vermelho) {
+		outro = outro_esqueleto_vermelho;
+	}
 }
 
 if (outro) {

@@ -28,8 +28,8 @@
   "nineSlice": null,
   "origin": 4,
   "parent": {
-    "name": "grupo1",
-    "path": "folders/Sprites/grupo1.yy",
+    "name": "spr_morcego",
+    "path": "folders/Sprites/spr_morcego.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
