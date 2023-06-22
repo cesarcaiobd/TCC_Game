@@ -138,11 +138,11 @@
   ],
   "RoomOrderNodes": [
     {"roomId":{"name":"Menu","path":"rooms/Menu/Menu.yy",},},
-    {"roomId":{"name":"Fase3","path":"rooms/Fase3/Fase3.yy",},},
     {"roomId":{"name":"Fase1","path":"rooms/Fase1/Fase1.yy",},},
     {"roomId":{"name":"Fase2","path":"rooms/Fase2/Fase2.yy",},},
-    {"roomId":{"name":"Ambiente1","path":"rooms/Ambiente1/Ambiente1.yy",},},
+    {"roomId":{"name":"Fase3","path":"rooms/Fase3/Fase3.yy",},},
     {"roomId":{"name":"Fase4","path":"rooms/Fase4/Fase4.yy",},},
+    {"roomId":{"name":"Ambiente1","path":"rooms/Ambiente1/Ambiente1.yy",},},
   ],
   "TextureGroups": [
     {"resourceType":"GMTextureGroup","resourceVersion":"1.3","name":"Default","autocrop":true,"border":2,"compressFormat":"bz2","directory":"","groupParent":null,"isScaled":true,"loadType":"default","mipsToGenerate":0,"targets":-1,},
