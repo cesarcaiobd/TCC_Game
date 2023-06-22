@@ -42,7 +42,7 @@ if (place_meeting(x + velocidade_horizontal, y - 1, obj_bloco)) {
 switch (estado) {
 	
 	case "parado": {
-		sprite_index = spr_skeleton_idle;
+		sprite_index = animacao_parado;
 	
 		if (velocidade_horizontal != 0) {
 			estado = "movendo";
@@ -57,7 +57,7 @@ switch (estado) {
 	}
 	
 	case "movendo": {
-		sprite_index = spr_skeleton_run;
+		sprite_index = animacao_correndo;
 		
 		if (velocidade_horizontal == 0) {
 			estado = "parado";
@@ -76,7 +76,7 @@ switch (estado) {
 			velocidade_horizontal = 0;
 		}
 		
-		sprite_index = spr_skeleton_attack;
+		sprite_index = animacao_ataque;
 		
 		if (image_index == image_number - 1) {
 			estado = "parado";
@@ -94,7 +94,7 @@ switch (estado) {
 	
 	case "dano": {
 		velocidade_horizontal = 0;
-		sprite_index = spr_skeleton_hurt;
+		sprite_index = animacao_dano;
 		
 		if (image_index == image_number - 1) {
 			estado = "parado";
@@ -105,7 +105,7 @@ switch (estado) {
 	
 	case "morte": {
 		velocidade_horizontal = 0;
-		sprite_index = spr_skeleton_dead;
+		sprite_index = animacao_morte;
 		
 		if (image_index == image_number - 1) {
 			instance_destroy();
