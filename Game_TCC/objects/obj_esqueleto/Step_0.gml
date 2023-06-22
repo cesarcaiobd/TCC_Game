@@ -32,7 +32,7 @@ if (direcao != 0 && image_xscale != direcao) {
 
 switch (estado) {
 	case "parado": {
-		sprite_index = spr_esqueleto_2_idle;
+		sprite_index = spr_esqueleto_idle;
 		
 		if (campo_de_visao) {
 			estado = "movendo";
@@ -42,7 +42,7 @@ switch (estado) {
 	}
 	
 	case "movendo": {
-		sprite_index = spr_esqueleto_2_walk;
+		sprite_index = spr_esqueleto_walk;
 		x += velocidade_horizontal;
 		
 		/*if (!campo_de_visao) {
@@ -60,7 +60,7 @@ switch (estado) {
 	
 	case "dano": {
 		velocidade_horizontal = 0;
-		sprite_index = spr_esqueleto_2_hit;
+		sprite_index = spr_esqueleto_hit;
 		
 		if (image_index == image_number - 1) {
 			estado = "movendo";
@@ -71,7 +71,7 @@ switch (estado) {
 	
 	case "morte": {
 		velocidade_horizontal = 0;
-		sprite_index = spr_esqueleto_2_dead;
+		sprite_index = spr_esqueleto_dead;
 		
 		if (image_index == image_number - 1) {
 			instance_destroy();
@@ -82,7 +82,7 @@ switch (estado) {
 	
 	case "atacando": {
 		velocidade_horizontal = 0;
-		sprite_index = spr_esqueleto_2_attack;
+		sprite_index = spr_esqueleto_attack;
 		
 		if (image_index == image_number - 1) {
 			estado = "movendo";

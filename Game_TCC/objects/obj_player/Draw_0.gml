@@ -1,6 +1,6 @@
 draw_self();
 
-//draw_text(x, y - sprite_height * 2, estado);
+//draw_text(x, y - sprite_height * 2, forca_do_ataque);
 //draw_text(x, y - sprite_height * 3, sign(velocidade_vertical));
 
 hp = vida / vida_maxima * 100;

@@ -12,3 +12,4 @@ dano = noone;
 forca_do_ataque = 2;
 visao = 200;
 nome = "esqueleto";
+vida_dropada = 1;

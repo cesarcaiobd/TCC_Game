@@ -30,8 +30,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_esqueleto_2_idle",
-    "path": "sprites/spr_esqueleto_2_idle/spr_esqueleto_2_idle.yy",
+    "name": "spr_esqueleto_idle",
+    "path": "sprites/spr_esqueleto_idle/spr_esqueleto_idle.yy",
   },
   "spriteMaskId": null,
   "visible": true,

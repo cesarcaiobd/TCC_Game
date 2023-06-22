@@ -5,22 +5,6 @@ ataque = keyboard_check_pressed(ord("J"));
 image_yscale = tamanho;
 image_xscale = tamanho * sign(image_xscale);
 
-/*if (mouse_check_button_pressed(mb_left)) {
-	
-}*/
-
-/*if (place_meeting(x, y + velocidade_vertical, obj_bloco)) {
-	while (!place_meeting(x, y + sign(velocidade_vertical), obj_bloco)) {
-		y += sign(velocidade_vertical);
-	}
-	
-	velocidade_vertical = 0;
-	pulos = limite_de_pulo;
-}
-else {
-	velocidade_vertical += gravidade * massa;
-}*/
-
 if (pulo && pulos > 0) {
 	if (place_meeting(x, y + 1, obj_bloco) && pulos == limite_de_pulo || !place_meeting(x, y + 1, obj_bloco) && pulos <= limite_de_pulo) {
 		velocidade_vertical = -forca_do_pulo;
